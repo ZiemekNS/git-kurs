@@ -6,6 +6,6 @@ public class Op5_logicalOperatorOr {
         System.out.println(10 > 2 || 5 >= 1); //true
         System.out.println(10 > 8 || 1 == 10); //true
         System.out.println(3 < 8 || 1 == 1); //true
-        System.out.println(4 > 5 || 2 <= 1); //false    
+        System.out.println(4 > 5 || 2 <= 1); //false
     }
 }
