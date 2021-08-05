@@ -4,7 +4,7 @@ public class IfStatement {
 
     public static void main(String args[]) {
 
-        int a =3;
+        int a = 3;
         if (a  > 5) {
             System.out.println("a jest wieksze od 5");
         }
