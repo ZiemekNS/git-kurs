@@ -9,7 +9,7 @@ public class BasicScanner {
         Scanner in = new Scanner(System.in);
 
         System.out.println("Podaj swoje imię");
-        String main = in.nextLine();
-        System.out.println("Twoje imię to: " +in);
+        String name = in.nextLine();
+        System.out.println("Twoje imię to: " +name);
     }
 }
