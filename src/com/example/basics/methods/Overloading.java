@@ -1,6 +1,8 @@
 package com.example.basics.methods;
 
 class RectangleOverloading{
+    float side1, side2;
+
     
 }
 
