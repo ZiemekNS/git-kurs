@@ -26,6 +26,6 @@ public class SingletonExample {
 
         connection2.getFromDB();
 
-        System.out.println( connection1 == connection2 );
+        System.out.println(connection1 == connection2);
     }
 }
