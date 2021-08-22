@@ -24,7 +24,7 @@ public class Overloading {
     public static void main(String[] args) {
 
         MathOverloading math = new MathOverloading();
-        int a = 13;
+        int a = 14;
         int b = 3;
         System.out.println(math.add(a,b));
         System.out.println(math.add(a,b,b));
