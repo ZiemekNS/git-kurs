@@ -3,7 +3,7 @@ package com.example.basics.data.string_class;
 public class Concatenation {
     public static void main(String args[]) {
         String s1 = "Hello ";
-        String s2 ="World!";
+        String s2 = "World!";
         String s3 = s1 + s2 + " from Java prog.";
         System.out.println(s3);
 

@@ -12,6 +12,4 @@ public class Functions_subString {
         System.out.println(frag2);
 
     }
-
-
-    }
+}

@@ -6,7 +6,7 @@ public class J07_varType {
         System.out.println(number);
     }
 
-    public static int add(int a, String b){
+    public static int add(int a, String b) {
         var result = a + Integer.valueOf(b).intValue();
         return result;
     }

@@ -5,14 +5,12 @@ public class Functions_trim_stripLeading_stripTrailing {
 
         String str = "   \n \n Helo World!              \n ";
         String str2 = str.trim();
-        System.out.println( "\"" + str2 + "\"");
+        System.out.println("\"" + str2 + "\"");
 
         String str3 = str.stripLeading();
-        System.out.println( "\"" + str3 + "\"");
+        System.out.println("\"" + str3 + "\"");
 
         String str4 = str.stripTrailing();
-        System.out.println( "\"" + str4 + "\"");
-
-
+        System.out.println("\"" + str4 + "\"");
     }
 }

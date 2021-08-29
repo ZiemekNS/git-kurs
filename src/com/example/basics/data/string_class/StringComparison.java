@@ -6,8 +6,8 @@ public class StringComparison {
         String s1 = "Hello";
         String s2 = "Hello";
         String s3 = "HELLo";
-        
-        
+
+
         if (s2.equals(s1)) System.out.println("s1 jest równe s1");
 
         if (s3.equals(s1)) System.out.println("s3 jest równe s1");

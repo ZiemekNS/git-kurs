@@ -6,12 +6,12 @@ public class J10_arrrays {
         int numArr[] = new int[10];
         numArr[1] = 7;
         System.out.println("numArr[]: " + numArr[1]
-                + ", numArr.length(): " + numArr.length );
-        float floatsArr[] = { 10.1f, 123.78f, 78.8f, -99.9f };
+                + ", numArr.length(): " + numArr.length);
+        float floatsArr[] = {10.1f, 123.78f, 78.8f, -99.9f};
         floatsArr[0] = 1.0f;
 
-        System.out.println("floatsArr[1]: "+floatsArr[1]
-                + ", floatsArr.length: "+floatsArr.length);
+        System.out.println("floatsArr[1]: " + floatsArr[1]
+                + ", floatsArr.length: " + floatsArr.length);
 
         String strArr[] = new String[7];
         System.out.println("strArr[1]: " + strArr[1]);

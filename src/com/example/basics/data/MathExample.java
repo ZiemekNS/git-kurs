@@ -1,4 +1,5 @@
 package com.example.basics.data;
+
 import java.lang.*;
 
 public class MathExample {
@@ -8,7 +9,7 @@ public class MathExample {
         double sqrt = Math.sqrt(d);
         System.out.println(sqrt);
 
-        double power = Math.pow(d,2);
+        double power = Math.pow(d, 2);
         System.out.println(power);
     }
 }

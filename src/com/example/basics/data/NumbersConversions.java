@@ -6,7 +6,7 @@ public class NumbersConversions {
 
         //konwersja jawna - zawężająca
         int i = 5;
-        double d = 20.0d / (double)i;
+        double d = 20.0d / (double) i;
         System.out.println(d);
 
         //konwersja niejawna - rozszerzająca
@@ -16,11 +16,11 @@ public class NumbersConversions {
 
         // rzutowanie / casting
         double d2 = 5.5;
-        int num = 10 * (int)d2; //przy rzutowaniu/konwersji float/double na
+        int num = 10 * (int) d2; //przy rzutowaniu/konwersji float/double na
         // typ całkowity, część ułamkowa jest tracona
         System.out.println(num); //50
 
-        byte small = (byte)200; //rzutowaine z short na byte co powoduje utratę informacji
-        System.out.println("Small: "+small);
+        byte small = (byte) 200; //rzutowaine z short na byte co powoduje utratę informacji
+        System.out.println("Small: " + small);
     }
 }

@@ -1,7 +1,6 @@
 package com.example.basics.data.types;
 
-public class J05_variableNames
-{
+public class J05_variableNames {
 
     public static void main(String args[]) {
         int _int1 = 10;

@@ -21,9 +21,7 @@ public class CompoundInterest {
         System.out.println("Przez ile lat zamierzasz oszczędzać?");
         numYears = in.nextInt();
 
-        finalCapital = startCapital * Math.pow(1 + (yearlyInterest/100), numYears);
+        finalCapital = startCapital * Math.pow(1 + (yearlyInterest / 100), numYears);
         System.out.println("Finalnie uda się zaoszczędzić " + Math.round(finalCapital));
-
-
     }
 }

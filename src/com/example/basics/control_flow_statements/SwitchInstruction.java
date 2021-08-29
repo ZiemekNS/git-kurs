@@ -8,7 +8,7 @@ public class SwitchInstruction {
 
         int num = 10;
 
-        switch(num) {
+        switch (num) {
             case 1:
                 System.out.println(1);
                 System.out.println(" ok");
@@ -22,12 +22,12 @@ public class SwitchInstruction {
             case 11:
                 System.out.println(11);
                 break;
-                default:
-                    System.out.println("default: "+num);
+            default:
+                System.out.println("default: " + num);
         }
 
         String str = "Ania";
-        switch (str){
+        switch (str) {
             case "Ola":
                 System.out.println("Ola");
                 break;
@@ -35,18 +35,18 @@ public class SwitchInstruction {
                 System.out.println("Ania");
                 break;
             default:
-                System.out.println("Default: "+str);
+                System.out.println("Default: " + str);
         }
         CarVariant car = CarVariant.KOMBI;
 
-        switch (car){
+        switch (car) {
             case KOMBI:
                 System.out.println(CarVariant.KOMBI);
                 break;
             case SEDAN:
                 System.out.println(CarVariant.SEDAN);
             default:
-                System.out.println("Default: "+car);
+                System.out.println("Default: " + car);
         }
 
     }

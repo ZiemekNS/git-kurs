@@ -6,7 +6,7 @@ public class DoWhileLoop {
         int a = 0;
 
         do {
-            System.out.println(a*2);
+            System.out.println(a * 2);
             a++;
         } while (a < 10);
 

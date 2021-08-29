@@ -10,6 +10,6 @@ public class BasicScanner {
 
         System.out.println("Podaj swoje imię");
         String name = in.nextLine();
-        System.out.println("Twoje imię to: " +name);
+        System.out.println("Twoje imię to: " + name);
     }
 }

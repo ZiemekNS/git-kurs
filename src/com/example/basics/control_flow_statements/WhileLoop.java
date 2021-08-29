@@ -5,15 +5,15 @@ public class WhileLoop {
 
         int i = 5;
 
-        while (i > 0){
+        while (i > 0) {
             System.out.println(i);
             i--;
         }
 
         i = 0;
 
-        while (i < 6){
-            System.out.println("i: "+i);
+        while (i < 6) {
+            System.out.println("i: " + i);
             i++;
         }
     }

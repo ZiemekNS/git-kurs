@@ -7,6 +7,5 @@ public class Op6_concatenationOperator {
         String s1 = "Hello";
         String s2 = s1 + " World"; // + to operator konkatenacji
         System.out.println(s2);
-
     }
 }
