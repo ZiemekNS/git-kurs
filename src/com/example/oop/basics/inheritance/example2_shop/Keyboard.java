@@ -5,6 +5,7 @@ public class Keyboard extends Product {
 
     Keyboard() {
         numKey = 104;
+        price = 50.0f;
     }
 
     Keyboard(int numKey) {

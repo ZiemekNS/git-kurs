@@ -23,14 +23,19 @@ public class Shop {
         Mouse mouse = new Mouse();
         mouse.numButtons = 4;
 
+        VerticalMouse verticalMouse = new VerticalMouse();
+        verticalMouse.numButtons = 10;
+
         Monitor monitor = new Monitor();
-        monitor.resolution = 1440;
 
         Keyboard keyboard = new Keyboard();
         keyboard.numKey = 106;
 
         Computer computer = new Computer();
-        computer.manufacturer = "Dell";
+        System.out.println(computer.monitor.resolution);
+        System.out.println("Keyboard price: " + keyboard.price);
+        System.out.println("Computer price: " + computer.price);
+        System.out.println("Monitor price: " + monitor.price);
 
     }
 }
