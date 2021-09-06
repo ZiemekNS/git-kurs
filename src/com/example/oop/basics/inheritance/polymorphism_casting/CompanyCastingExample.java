@@ -1,4 +1,4 @@
-package com.example.oop.basics.inheritance.polymorphism_basics;
+package com.example.oop.basics.inheritance.polymorphism_casting;
 
 class Employee {
     private String name;
@@ -117,26 +117,20 @@ class Ceo extends Manager {
     }
 }
 
-public class Company {
+public class CompanyCastingExample {
     public static void main(String[] args) {
         Employee employee = new Employee("Adam", "Programmer", 10000);
         Manager manager = new Manager("Kasia", "Team Leader", 10000, "R&D");
 
-        Ceo ceo = new Ceo("Rafał", "Prezes", 20000,
+        Employee employeeCeo = new Ceo("Rafał", "Prezes", 20000,
                 "Board", 100);
 
-        Employee worker = ceo;
-        worker.doWork();
-        worker.printInfo(); //Ceo: Rafał z klasy CEO, wiązanie dynamiczne
+        //employeeCeo = manager;
 
+        // employeeCeo.signContract();
+        if (employeeCeo instanceof Ceo) {
+        Ceo ceo = (Ceo)employeeCeo;
         ceo.signContract();
-        ceo.printInfo(); //Ceo: Rafał
-        Manager person = ceo;
-        person.hireEmployee();
-        System.out.println(ceo);
-
-        person.printInfo(); //Ceo: Rafał
-
-
+        }
     }
 }
