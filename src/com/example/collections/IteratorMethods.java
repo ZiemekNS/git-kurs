@@ -8,7 +8,7 @@ public class IteratorMethods {
         ArrayList<String> arr = new ArrayList<>();
         arr.add("Dodge");
         arr.add("Pontiac");
-        arr.add("Merc");
+        arr.add("Mercs");
 
         arr.iterator().forEachRemaining(element -> {
             System.out.println(element);
