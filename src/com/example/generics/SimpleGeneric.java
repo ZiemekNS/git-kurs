@@ -1,4 +1,4 @@
-package generics;
+package com.example.generics;
 
 class Point<T> {
     private T x;
