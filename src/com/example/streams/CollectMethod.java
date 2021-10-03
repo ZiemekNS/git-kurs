@@ -1,16 +1,14 @@
 package com.example.streams;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
-public class StreamsBasics {
+public class CollectMethod {
     public static void main(String[] args) {
+
+
         ArrayList<String> arr = new ArrayList<>();
-        arr.add("Asia");
-        arr.add("Paweł");
-        arr.add("Daniel");
-        arr.add("Ola");
-        arr.add("Zuzanna");
-        arr.add("Zenon");
 
         arr.stream().filter(str -> str.length() > 3 && str.length() < 7)
                 .filter(str -> str.startsWith("A") || str.startsWith("P"))
@@ -25,9 +23,10 @@ public class StreamsBasics {
         cars.add(new Car("Porsche", 300, 800000, 5));
         cars.add(new Car("BMW", 240, 300000, 5));
 
-        cars.stream().filter(car -> car.rating > 3)
-                .filter(car -> car.price > 200000 && car.price < 600000)
-                .filter(car -> car.topSpeed >= 200 && car.topSpeed < 300)
-                .forEach(car -> System.out.println(car));
+        List<Car> list = cars.stream().filter(car -> car.price < 300000)
+                .collect(Collectors.toList());
+
+        ArrayList<Car> carArrayList = new ArrayList<>(list);
+        carArrayList.forEach(car -> System.out.println(car));
     }
 }

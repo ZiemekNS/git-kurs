@@ -1,16 +1,15 @@
 package com.example.streams;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
-public class StreamsBasics {
+public class CollectToSetMethod {
     public static void main(String[] args) {
+
+
         ArrayList<String> arr = new ArrayList<>();
-        arr.add("Asia");
-        arr.add("Paweł");
-        arr.add("Daniel");
-        arr.add("Ola");
-        arr.add("Zuzanna");
-        arr.add("Zenon");
 
         arr.stream().filter(str -> str.length() > 3 && str.length() < 7)
                 .filter(str -> str.startsWith("A") || str.startsWith("P"))
@@ -24,10 +23,13 @@ public class StreamsBasics {
         cars.add(new Car("GMC", 170, 100000, 3));
         cars.add(new Car("Porsche", 300, 800000, 5));
         cars.add(new Car("BMW", 240, 300000, 5));
+        cars.add(new Car("Citroen", 180, 200000, 3));
+        cars.add(new Car("Citroen", 180, 200000, 3));
 
-        cars.stream().filter(car -> car.rating > 3)
-                .filter(car -> car.price > 200000 && car.price < 600000)
-                .filter(car -> car.topSpeed >= 200 && car.topSpeed < 300)
-                .forEach(car -> System.out.println(car));
+        Set<Car> set = cars.stream().filter(car -> car.price < 300000)
+                .collect(Collectors.toSet());
+
+        ArrayList<Car> carArrayList = new ArrayList<>(set);
+        set.forEach(car -> System.out.println(car));
     }
 }
