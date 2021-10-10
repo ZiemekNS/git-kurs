@@ -6,17 +6,33 @@ class RunnableClass implements Runnable {
 
     public RunnableClass(int sleepTime, String threadName) {
         this.sleepTime = sleepTime;
+        this.threadName = threadName;
     }
 
     @Override
     public void run() {
         for (int i = 0; i < 10; i++) {
-            System.out.println("Wątek, wartość i: " + i);
+            System.out.println("Wątek " + threadName + ", wartość i: " + i);
             try {
                 Thread.sleep(this.sleepTime);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
+        }
+    }
+}
+
+class RunnableClass2 extends RunnableClass implements Runnable {
+    private Thread thread;
+
+    public RunnableClass2(int sleepTime, String threadName) {
+        super(sleepTime, threadName);
+    }
+
+    public void start() {
+        if (thread == null) {
+            thread = new Thread(this);
+            thread.start();
         }
     }
 }
@@ -32,5 +48,7 @@ public class RunnableExample {
         Thread thread2 = new Thread(t2, "thread2");
         thread2.start();
 
+        RunnableClass2 t3 = new RunnableClass2(300, "thread3");
+        t3.start();
     }
 }
